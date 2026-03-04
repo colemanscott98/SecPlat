@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: secure-auth-platform
+  datasource:
+    url: jdbc:postgresql://localhost:5432/secure_auth
+    username: // Put usename here
+    password: // Put PW HERE WOW!!
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    sql:
+      init:
+        mode: always
+
+  server:
+    port: 8080
